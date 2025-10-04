@@ -419,8 +419,6 @@ def _system_callback_handler(hass, config, src, *args):
     """System callback handler."""
     # New devices available at hub
     if src == "newDevices":
-        # (interface_id, dev_descriptions) = args
-        # interface = interface_id.split("-")[-1]
 
         _interface_id, dev_descriptions = args
         interface = _interface_id.split("-")[-1]
